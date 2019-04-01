@@ -1,0 +1,36 @@
+#pink{
+    background-color: lightpink;
+}
+#green{
+    background-color: limegreen;
+}
+#blue{
+    background-color: skyblue;
+}
+#red{
+    background-color: darkred;
+}
+.jumbotron .lead{
+    color: darkgreen;
+}
+.jumbotron .display-4{
+    color: darkred;
+}
+.container .jumbotron{
+    background-color: darksalmon;
+}
+body{
+    background-image: url("../images/background.jpg");
+}
+#score{
+    height: 200px;
+    background-color: darkcyan;
+    border-radius: 5px;
+    margin-bottom: 35px;
+}
+#winLoss{
+    height: 200px;
+    background-color: darkorchid;
+    border-radius: 5px;
+    margin-bottom: 35px;
+}
