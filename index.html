@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="./assets/css/reset.css">
         <link rel="stylesheet" href="./assets/css/style.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <title>Crystal Collector</title>
     </head>
     <body>
@@ -23,16 +24,19 @@
                         <br>
                         <p class="lead">Each time the game starts the value of each crystal will change.</p>
                         <hr class="my-4">
-                        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-                        <a class="btn-lg" id="pink" href="#" role="button">Learn more</a>
-                        <a class="btn-lg" id="green" href="#" role="button">Learn more</a>
-                        <a class="btn-lg" id="blue" href="#" role="button">Learn more</a>
-                        <a class="btn-lg" id="red" href="#" role="button">Learn more</a>
+                        <div class="crystals">
+                            <div class="btn-lg crystal col-2 float-left" id="pink"  role="button">Rose Quartz</div>
+                            <div class="btn-lg crystal col-2 float-left" id="green"  role="button">Jade</div>
+                            <div class="btn-lg crystal col-2 float-left" id="blue"  role="button">Sapphire</div>
+                            <div class="btn-lg crystal col-2 float-left" id="red"  role="button">Ruby</div>
+                            <div class="btn-lg crystal col-2 float-right" id="reset" role="button">Reset</div>
+                        </div>
                 </div>
                 <div class=container>
                     <div class="row">
                         <div class="col-8" id="score">
-                            <h1>Running Total: <span id="scoreNumber">1</span></h1>
+                            <h1>Given Value: <span id="scoreNumber"></span></h1>
+                            <h1>Running Total: <span id="runningScoreNumber">0</span></h1>
                         </div>
                         <div class="col-4" id="winLoss">
                             <h3>Wins: <span id="wins"></span></h3>
@@ -42,4 +46,5 @@
                 </div>
         </div>
     </body>
+    <script type="text/javascript" src="./assets/js/game.js"></script>
 </html>
