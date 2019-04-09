@@ -20,6 +20,8 @@ $(document).ready(function() {
         var random = Math.floor(Math.random() * 21)+1;
         numbers.push(random);
     };
+    
+    
     //check numbers array
     console.log(numbers);
 
@@ -34,38 +36,40 @@ $(document).ready(function() {
         previous += value;
         $("#runningScoreNumber").html(previous);
         console.log(previous);
-
         if(previous > random_number){
             console.log("You Lost");
             losses++;
             $("#losses").html(losses);
             previous = 0;
-            random_number = Math.floor(Math.random() *69 + 30);
+            random_number = Math.floor(Math.random() *69) + 30;
             $("#scoreNumber").html(random_number);
             $("#runningScoreNumber").html(previous);
+            
         }else if (previous === random_number){
             console.log("You Win!");
             wins++;
             $("#wins").html(wins);
             previous = 0;
-            random_number = Math.floor(Math.random() *69 + 30);
+            random_number = Math.floor(Math.random() *69) + 30;
             $("#scoreNumber").html(random_number);
             $("#runningScoreNumber").html(previous);
         }else{/*Not sure here*/};
     });
 
     $("#reset").on("click", function(){
-        random_number = Math.floor(Math.random() *69 + 30);
+        random_number = Math.floor(Math.random() *69) + 30;
         $("#scoreNumber").html(random_number);
         $("#runningScoreNumber").html(previous);
         previous = 0;
         wins = 0;
         losses = 0;
+        $("#wins").html(wins);
+        $("#losses").html(losses);
     });
     
 });
 
-
+//So, I know the doe is not very DRY, but I was really excited to get it working the way I wanted it to. 
 
 
 
