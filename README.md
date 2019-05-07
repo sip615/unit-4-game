@@ -1,4 +1,4 @@
-# unit-4-game
+# Crystal Collector
 Jquery homework assignment 
 
 
